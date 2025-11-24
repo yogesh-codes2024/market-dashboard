@@ -1,0 +1,192 @@
+<style>
+  .widgets-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-top: 20px;
+  }
+  .tradingview-widget-container {
+    flex: none;
+  }
+  .fear-greed-container {
+    width: 400px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .fear-greed-header {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .fear-greed-gauge {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #d32f2f, #f57c00, #fbc02d, #7cb342, #388e3c);
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .fear-greed-needle {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    transform-origin: top center;
+  }
+  .fear-greed-value {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2196F3;
+  }
+  .fear-greed-label {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #aaa;
+  }
+  .fear-greed-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+  }
+  .fear-greed-tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 12px;
+    transition: all 0.3s;
+  }
+  .fear-greed-tab.active {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+  }
+  .fear-greed-history {
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 12px;
+  }
+  .fear-greed-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+  }
+  .fear-greed-timestamp {
+    color: #aaa;
+  }
+  .fear-greed-value-history {
+    font-weight: bold;
+  }
+</style>
+
+<div class="widgets-container">
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-usa/" rel="noopener nofollow" target="_blank"><span class="blue-text">Stocks today</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+  {
+  "exchange": "US",
+  "colorTheme": "dark",
+  "dateRange": "12M",
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "showSymbolLogo": false,
+  "showFloatingTooltip": false,
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(240, 243, 250, 0)",
+  "scaleFontColor": "#DBDBDB",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "width": "400",
+  "height": "550"
+}
+  </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-GOOG/" rel="noopener nofollow" target="_blank"><span class="blue-text">GOOG stock price</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "NASDAQ:GOOG",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "width": 350,
+  "height": 550
+}
+  </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-QQQ/" rel="noopener nofollow" target="_blank"><span class="blue-text">QQQ price</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "NASDAQ:QQQ",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "width": 350,
+  "height": 550
+}
+  </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TQQQ/" rel="noopener nofollow" target="_blank"><span class="blue-text">TQQQ price</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "NASDAQ:TQQQ",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "width": 350,
+  "height": 550
+}
+  </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP" rel="noopener nofollow" target="_blank"><span class="blue-text">Bitcoin price</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "BITSTAMP:BTCUSD",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "width": 350,
+  "height": 550
+}
+  </script>
+  </div>
+  <!-- TradingView Widget END -->
+</div>
+
+
